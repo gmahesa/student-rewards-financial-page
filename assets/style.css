@@ -2,6 +2,7 @@ body {
   font-family: "Inter";
   background-color: #0b0b0b;
   color: white;
+  box-sizing: border-box;
 }
 
 nav a,
@@ -14,11 +15,8 @@ header {
   margin-block: 100px;
 }
 
-.companies {
-  max-width: 150px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+.companies .col-2 {
+  height: fit-content;
 }
 
 .active {
@@ -33,6 +31,10 @@ header {
   color: white;
 }
 
+.non-nav-btn {
+  min-width: 180px;
+}
+
 .blue-btn {
   background-color: #4d17e2;
   border: 1px;
@@ -41,4 +43,16 @@ header {
 
 .inverted {
   filter: invert();
+}
+
+.top-feature-absolute {
+  top: 0%;
+  left: 3%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.center-feature-absolute {
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
 }
